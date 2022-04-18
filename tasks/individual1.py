@@ -20,9 +20,12 @@ class Number:
     def display(self):
         print(f"Число возведенное в степень {power(self)}")
 
-def power(self):
-    return self.first ** self.second
-
+def power(first, second):
+    # Если число возводимое в степень равно 0
+    if first == 0:
+        raise ValueError
+    else:
+        return first ** second
 
 if __name__ == "__main__":
     newNumber = Number(3, 4)
